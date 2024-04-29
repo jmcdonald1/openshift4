@@ -1,3 +1,3 @@
 # satautomation
 
-#Test directions for Sat Automation
+Test directions for Sat Automation
