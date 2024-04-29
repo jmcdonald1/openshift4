@@ -18,7 +18,7 @@ This workshop currently focuses on 4 main customer pain points:
 ## **Presentations** ##
 The exercises are self-explanatory and are meant to guide participants through the entire lab. All concepts are explained as they are introduced. 
 
-There is an optional presentation available to support the workshops and explain Automation, the basics of Ansible and the topics of the exercises in more detail. Today's Workshop presentation is located at Automation Satellite Workshop.
+There is an optional presentation available to support the workshops and explain Automation, the basics of Ansible and the topics of the exercises in more detail. Today's Workshop presentation can be downloaded [here](https://github.com/Emergent360/satautomation/commit/ef36d9a47c077267a27418d94aea807b07e3366b#diff-3f84a017d567ca18b90db67ad278422e0df1ec7dfeabd20d4c2730e97956d0f8)
 
 ## **Welcome to Your Ansible Automation Platform Workshop Tour!**
 Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
