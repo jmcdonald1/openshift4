@@ -21,12 +21,12 @@ This workshop currently focuses on 4 main customer pain points:
 - CentOS to RHEL conversion
 - Vulnerability Management with Insights
 
-## **Presentations** ##
+## **Presentation** ##
 The exercises are self-explanatory and are meant to guide participants through the entire lab. All concepts are explained as they are introduced. 
 
 Today's presentation is available to support the workshop and explain Automation, the basics of Ansible and the topics of the exercises in more detail. Today's Workshop presentation can be downloaded [here](https://uploads-ssl.webflow.com/64dd02f7406bf2448a30e68f/662fdbc786abd010d11d18b8_Satellite%20Automation.pdf)
 
-## **Time Planning** ##
+## **Time Planning and CPE Credits** ##
 The time required to do the workshops strongly depends on multiple factors: the number of participants, how familiar those are with Linux in general and how much discussions are done in between.
 
 Having said that, the presentation should take about 40 minutes, with a 10-minute break, then the exercises themselves should take roughly 3 hours. We will break every 40 minutes or so to complete three polling questions, allowing the group to qualify for CPEs. This workshop is accredited by NASBA, which requires one CPE credit to be awarded for every 50 minutes of teaching. The polling questions ensure participants are present and working on presented content. You will be awarded credits as long as you respond to the polling questions. 
@@ -43,9 +43,21 @@ Here's what you can expect today:
 We'll kick things off with an overview of AAP, its key components, and its numerous benefits for automating infrastructure, applications, and IT workflows.
 Learn how AAP builds upon the foundation of Ansible Tower and introduces features like centralized management, role-based access control, and enhanced security.
 
-Today's workshop environment looks like this:
+A chart of today's workshop environment looks like this:
 
 ![ansible_smart_mgmt_diagram](https://github.com/Emergent360/satautomation/assets/18014714/51aea489-b1f3-4d17-9696-3bc6802a18e2)
+
+## **Environment** ##
+
+**Role**	                        **Inventory name**
+Automation controller	        ansible-1
+Satellite Server	            satellite
+Managed Host 1 - RHEL	        node1
+Managed Host 2 - RHEL	        node2
+Managed Host 3 - RHEL	        node3
+Managed Host 4 - CentOS	      node4
+Managed Host 5 - CentOS	      node5
+Managed Host 6 - CentOS	      node6
 
 
 2. Diving into the AAP User Interface:
