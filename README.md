@@ -111,3 +111,83 @@ Client Systems: RHEL systems managed by Satellite.
 Content Repositories: Repositories containing software packages, patches, and configuration files.
 External Systems: External systems like identity management and subscription management services.
 
+
+
+## **Convert2RHEL** ##
+
+Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, we will first SSH into a node. We can use Node4 for this exercise. 
+
+1. SSH into Node4
+
+   ```
+   ssh centos@node4
+   ``` 
+
+3. Login and sudo to root
+    - sudo su –
+
+4. Update CentOS box and reboot
+ 
+  ```
+  yum update -y
+  ```
+
+   - reboot
+
+6. Login again, sudo to root
+
+   - sudo su –
+
+7. Download RH GPG key and install convert2rhel repo
+
+  ```
+   curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
+```
+
+```
+    curl -o /etc/yum.repos.d/convert2rhel.repo https://ftp.redhat.com/redhat/convert2rhel/7/convert2rhel.repo
+```
+
+8. Install convert2rhel utility
+
+```
+   yum -y install convert2rhel
+```
+
+
+10. Add activation key. INI file should look like below after opening file using VI. Update the "activation_key" value to convert2rhel_demo. 
+
+    - vi /etc/convert2rhel.ini
+        
+	# -*- coding: utf-8 -*-
+        # This file should be in mode 0600
+        # Example of configuration file convert2rhel.ini for secrets.
+        # Possible locations of this file:
+        # 1) user specified and passed by -c, --config-file option; highest priority
+        # 2) ~/.convert2rhel.ini; lower priority
+        # 3) /etc/convert2rhel.ini; the lowest priority
+
+        [subscription_manager]
+        # password = <insert_password>
+        activation_key = convert2rhel_demo
+        org            = 13156267
+
+
+11. Run convert2rhel command
+
+   convert2rhel --debug
+
+
+11. IF the conversion fails, the kernel module may cause convert2rhel to fail, so we must ignore that step by setting following environment variable. Run the command below and try again. 
+
+   export CONVERT2RHEL_ALLOW_UNAVAILABLE_KMODS=1
+
+
+11. Reboot the system
+
+
+12. Login again, sudo to root, and verify system has been upgraded to RHEL:
+    a. uname –r
+    b. cat /etc/redhat-release
+    c. subscription-manager list 
+
