@@ -9,7 +9,7 @@ Before we get started, let's log into your student seat:
 ![student assignment page](https://github.com/Emergent360/satautomation/assets/18014714/cffcfda9-2488-4fe9-b75b-8a935870d960)
 
 
-> For more information on Ansible Best Practices, playbook and inventory creation, roles, and modules checkout this deck: [Ansible Best Practices](https://aap2.demoredhat.com/decks/ansible_best_practices.pdf) 
+> For more information on Ansible Best Practices, playbooks, inventory creation, roles, and modules; checkout this deck: [Ansible Best Practices](https://aap2.demoredhat.com/decks/ansible_best_practices.pdf) 
 
 
 
