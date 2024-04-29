@@ -1,5 +1,5 @@
 # Satellite Automation Workshop
-
+Welcome to today's Satellite Automation Workshop! We are very excited to present a bit of a tour along with some exercises that will help your teams understand how Ansible Automation Platform integrates with Red Hat Satellite to manage OS patching and content deployment in a predictable, automated way. 
 
 
 Log into your student seat 
