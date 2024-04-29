@@ -54,14 +54,9 @@ A chart of today's workshop environment looks like this:
 
 mindmap
 Root
-    RHEL
-      node1
-      node2
-      node3
-    CentOS
-      node4
-      node5
-      node6
+    A
+      B
+      C
 
 
 
