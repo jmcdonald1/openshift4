@@ -52,8 +52,6 @@ A chart of today's workshop environment looks like this:
 ![Environment](https://github.com/Emergent360/satautomation/assets/18014714/5f2170d8-4a2f-4a63-b08e-8d1db6f1dde8)
 
 
-
-
 Then, we will dive into the AAP User Interface:
 
 Get comfortable navigating the intuitive AAP user interface. We'll explore dashboards, inventories, projects, and credentials – the building blocks for your automation adventures.
@@ -111,6 +109,33 @@ Populate dynamic inventories - CentOS7
 
  Select the link noted for "Automation controller"
 ![AAP2](https://github.com/Emergent360/satautomation/assets/18014714/f8933677-a55e-4284-958e-411620b0e7b5)
+
+Once logged in, you should be able to see the Ansible Automation Platform dashboard:
+
+![Dashboard](https://github.com/Emergent360/satautomation/assets/18014714/84c26793-30d0-4e0b-89dd-424a087f19cd)
+
+Use the side pane menu on the left to select Projects and review the two projects named Automated Management and Fact Scan. These projects, along with the Workshop Inventory under Resources, and Inventories, have been set up for you during the provisioning of the lab environment. 
+
+<img width="1423" alt="Projects" src="https://github.com/Emergent360/satautomation/assets/18014714/aaa8bf2a-b366-4302-944a-cfb04bc1ada2">
+
+## **Exercise Two** ##
+
+Next, we will execute our first job template. We'll be working with several templates during today's workshop, and this step uses a couple of them to initialize the lab environment. 
+
+<img width="1423" alt="Templates" src="https://github.com/Emergent360/satautomation/assets/18014714/c05f3c6c-4264-4e80-8a00-a2eaa4172183">
+
+You should initially see three Templates, named Demo Job Template, Z / CaC / Controller, and Z / CaC / Satellite 
+
+Notice that the Z / CaC / Satellite template has already been run for you.
+
+We will have to run the Z / CaC / Controller job template. To do this, click either into the job template and click Launch, or click the Rocketship icon. 
+
+<img width="1422" alt="controller" src="https://github.com/Emergent360/satautomation/assets/18014714/a2cd2502-1d65-4146-8d00-0ef265de1b04">
+
+You will be taken under the Views, Jobs output window, where you can view the output from the job run. This will display all the tasks executed as part of the playbook. This should take about two minutes to complete and you should see a green "Successful" tag after the name of the playbook in this view once the last task has completed. 
+
+<img width="1425" alt="Controller Play" src="https://github.com/Emergent360/satautomation/assets/18014714/ec278bcb-43f4-4623-aeaa-5811166088f9">
+
 
 
 
