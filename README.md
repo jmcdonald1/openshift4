@@ -6,6 +6,9 @@ Log into your student seat
 
 > Assign yourself a student number using [Student Assignments](https://aap2-april26test.lab-emergent360.com/#studentinfo)
 
+![student assignment page](https://github.com/Emergent360/satautomation/assets/18014714/cffcfda9-2488-4fe9-b75b-8a935870d960)
+
+
 
 ## **Use Cases** ##
 This workshop currently focuses on 4 main customer pain points: 
