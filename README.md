@@ -62,7 +62,6 @@ mindmap
       node4
       node5
       node6
-      Mermaid
 
 
 
