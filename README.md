@@ -4,7 +4,7 @@
 
 Log into your student number by accessing 
 
-> Assign yourself a student number using [Student Assignments] (https://aap2-april26test.lab-emergent360.com/#studentinfo)
+> Assign yourself a student number using [Student Assignments](https://aap2-april26test.lab-emergent360.com/#studentinfo)
 
 
 ## **Welcome to Your Ansible Automation Platform Workshop Tour!**
