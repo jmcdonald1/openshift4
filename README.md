@@ -2,10 +2,12 @@
 
 
 
-Log into your student number by accessing https://aap2-april26test.lab-emergent360.com/#studentinfo
+Log into your student number by accessing 
+
+> Assign yourself a student number using [Student Assignments] (https://aap2-april26test.lab-emergent360.com/#studentinfo)
 
 
-## Welcome to Your Ansible Automation Platform Workshop Tour!
+## **Welcome to Your Ansible Automation Platform Workshop Tour!**
 Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
 
 Here's what you can expect today:
