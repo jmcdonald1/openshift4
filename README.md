@@ -2,7 +2,7 @@
 
 
 
-Log into your student number by accessing 
+Log into your student seat 
 
 > Assign yourself a student number using [Student Assignments](https://aap2-april26test.lab-emergent360.com/#studentinfo)
 
