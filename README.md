@@ -1,11 +1,11 @@
 # satautomation
 
-Test directions for Sat Automation
-
-Log into your student number 
 
 
-Welcome to Your Ansible Automation Platform Workshop Tour!
+Log into your student number by accessing https://aap2-april26test.lab-emergent360.com/#studentinfo
+
+
+## Welcome to Your Ansible Automation Platform Workshop Tour!
 Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
 
 Here's what you can expect today:
@@ -42,6 +42,8 @@ Gain inspiration for how to leverage AAP to streamline your own processes and bo
 Throughout the workshop, there will be ample opportunities for hands-on practice, Q&A sessions, and interaction with your fellow participants and trainers.
 
 Get ready to embark on your automation journey with Ansible Automation Platform!
+
+## Satellite Tour
 
 Today's workshop will give you a comprehensive overview of Red Hat Satellite, a powerful management tool for Red Hat Enterprise Linux (RHEL) deployments. We'll delve into its features, explore its functionalities, and discover how it can streamline your infrastructure management.  By the end of this workshop, you'll be equipped to leverage Satellite's capabilities to automate tasks, improve security, and achieve greater efficiency in managing your RHEL environment.
 
