@@ -119,18 +119,18 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
 
 1. SSH into Node4
 
-   ```
+```
    ssh centos@node4
-   ``` 
+``` 
 
 3. Login and sudo to root
     - sudo su –
 
 4. Update CentOS box and reboot
  
-  ```
+```
   yum update -y
-  ```
+```
 
    - reboot
 
@@ -140,7 +140,7 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
 
 7. Download RH GPG key and install convert2rhel repo
 
-  ```
+```
    curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
 ```
 
@@ -199,8 +199,9 @@ vi /etc/convert2rhel.ini
 ```
 
 ```
-cat /etc/redhat-release
+    cat /etc/redhat-release
 ```
+
 ```
     subscription-manager list
 ```
