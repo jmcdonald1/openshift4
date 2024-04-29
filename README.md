@@ -6,6 +6,21 @@ Log into your student seat
 
 > Assign yourself a student number using [Student Assignments](https://aap2-april26test.lab-emergent360.com/#studentinfo)
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 
 ## **Welcome to Your Ansible Automation Platform Workshop Tour!**
 Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
@@ -45,9 +60,11 @@ Throughout the workshop, there will be ample opportunities for hands-on practice
 
 Get ready to embark on your automation journey with Ansible Automation Platform!
 
-## Satellite Tour
 
-Today's workshop will give you a comprehensive overview of Red Hat Satellite, a powerful management tool for Red Hat Enterprise Linux (RHEL) deployments. We'll delve into its features, explore its functionalities, and discover how it can streamline your infrastructure management.  By the end of this workshop, you'll be equipped to leverage Satellite's capabilities to automate tasks, improve security, and achieve greater efficiency in managing your RHEL environment.
+
+## **Satellite Tour**
+
+During this portion of today's workshop, we will give you a comprehensive overview of Red Hat Satellite, a powerful management tool for Red Hat Enterprise Linux (RHEL) deployments. We'll delve into its features, explore its functionalities, and discover how it can streamline your infrastructure management.  By the end of this workshop, you'll be equipped to leverage Satellite's capabilities to automate tasks, improve security, and achieve greater efficiency in managing your RHEL environment.
 
 A centralized management platform for Red Hat Enterprise Linux (RHEL) systems.
 Simplifies and automates tasks like provisioning, configuration management, patch management, and subscription management.
