@@ -51,21 +51,19 @@ A chart of today's workshop environment looks like this:
 
 **Role**	                        **Inventory name**
 
-Automation controller	        ansible-1
 
-Satellite Server	            satellite
+mindmap
+  root((ansible-1 + satellite))
+    RHEL
+      node1
+      node2
+      node3
+    CentOS
+      node4
+      node5
+      node6
+      Mermaid
 
-Managed Host 1 - RHEL	        node1
-
-Managed Host 2 - RHEL	        node2
-
-Managed Host 3 - RHEL	        node3
-
-Managed Host 4 - CentOS	      node4
-
-Managed Host 5 - CentOS	      node5
-
-Managed Host 6 - CentOS	      node6
 
 
 
