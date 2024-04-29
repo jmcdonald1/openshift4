@@ -157,7 +157,9 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
 
 10. Add activation key. INI file should look like below after opening file using VI. Update the "activation_key" value to convert2rhel_demo. 
 
-    - vi /etc/convert2rhel.ini
+```
+vi /etc/convert2rhel.ini
+```
         
 	# -*- coding: utf-8 -*-
         # This file should be in mode 0600
@@ -175,19 +177,31 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
 
 11. Run convert2rhel command
 
+   ```
    convert2rhel --debug
+```
 
 
 11. IF the conversion fails, the kernel module may cause convert2rhel to fail, so we must ignore that step by setting following environment variable. Run the command below and try again. 
 
+   ```
    export CONVERT2RHEL_ALLOW_UNAVAILABLE_KMODS=1
+```
 
 
 11. Reboot the system
 
 
 12. Login again, sudo to root, and verify system has been upgraded to RHEL:
-    a. uname –r
-    b. cat /etc/redhat-release
-    c. subscription-manager list 
+
+```
+    uname –r
+```
+
+```
+cat /etc/redhat-release
+```
+```
+    subscription-manager list
+```
 
