@@ -49,14 +49,7 @@ A chart of today's workshop environment looks like this:
 
 ## **Environment** ##
 
-**Role**	                        **Inventory name**
-
-
-mindmap
-Root
-    A
-      B
-      C
+![Environment](https://github.com/Emergent360/satautomation/assets/18014714/5f2170d8-4a2f-4a63-b08e-8d1db6f1dde8)
 
 
 
