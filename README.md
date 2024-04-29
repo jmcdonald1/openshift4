@@ -53,7 +53,7 @@ A chart of today's workshop environment looks like this:
 
 
 mindmap
-  root((ansible-1 + satellite))
+  ansible-1 + satellite
     RHEL
       node1
       node2
