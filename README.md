@@ -38,7 +38,7 @@ Get ready to unlock the power of automation! This workshop will guide you throug
 
 Here's what you can expect today:
 
-1. Introduction to Ansible Automation Platform (AAP):
+An Introduction to Ansible Automation Platform (AAP).
 
 We'll kick things off with an overview of AAP, its key components, and its numerous benefits for automating infrastructure, applications, and IT workflows.
 Learn how AAP builds upon the foundation of Ansible Tower and introduces features like centralized management, role-based access control, and enhanced security.
@@ -54,34 +54,63 @@ A chart of today's workshop environment looks like this:
 
 
 
-2. Diving into the AAP User Interface:
+Then, we will dive into the AAP User Interface:
 
 Get comfortable navigating the intuitive AAP user interface. We'll explore dashboards, inventories, projects, and credentials – the building blocks for your automation adventures.
 Learn how to manage your infrastructure within AAP, including adding machines, groups, and cloud resources.
-3. Building Your First Playbook:
+
+Next up, we will build our First Playbook:
 
 Now comes the fun part! We'll delve into the world of Ansible playbooks, the heart of automation. You'll learn how to write playbooks using YAML syntax to automate tasks.
 We'll walk you through the structure of a playbook, covering modules, tasks, variables, and conditionals.
+
 Get hands-on experience by building your first basic playbook to automate a simple task on your managed machines.
-4. Advanced Playbook Techniques:
+
+After building our first playbook, we will use some more advanced Playbook techniques:
 
 Don't stop there! We'll explore advanced playbook features like loops, conditionals, error handling, and templating. These powerful tools will enable you to create sophisticated automations that adapt to various conditions.
+
 Learn how to manage complex workflows by breaking them down into smaller, reusable playbooks.
-5. Inventory Management:
+
+We will of course take a look at Inventory management as well:
 
 Efficient inventory management is crucial for scaling your automation. We'll explore how to manage inventories in AAP, including adding machines by IP address, hostname, or cloud provider.
 Learn how to leverage dynamic inventories to automatically discover and manage your infrastructure.
-6. Security and Access Control:
+
+Finally, we'll take a look at Security and Access Control:
 
 Security is paramount. We'll discuss the robust security features within AAP, including role-based access control (RBAC) and credential management.
 Learn how to assign different levels of access to users and teams within your organization.
-7. Putting it All Together:
+
+Putting it All Together:
 
 We'll wrap up by showcasing some real-world examples of how AAP can be used to automate various tasks across IT operations, including provisioning servers, configuring software, and deploying applications.
+
 Gain inspiration for how to leverage AAP to streamline your own processes and boost your team's efficiency.
 Throughout the workshop, there will be ample opportunities for hands-on practice, Q&A sessions, and interaction with your fellow participants and trainers.
 
 Get ready to embark on your automation journey with Ansible Automation Platform!
+
+## **Objective** ##
+
+The objective of this exercise is to setup the lab environemnt following an Infrastructure as Code process. This exercise will require you to launch a series of playbooks. The playbooks accomplish the following:
+
+Populate Ansible Controller with an inventory source, add templates, as well as an additional project.
+Publish RHEL7 dev content view in Satellite
+Register servers to the Satellite installation - RHEL7
+Register servers to the Satellite installation - CentOS7
+Populate dynamic inventories - RHEL7
+Populate dynamic inventories - CentOS7
+
+## **Exercise One** ##
+ Log into your Ansible Automation Platform (AAP2) Controller
+
+ Use the link found [here](https://aap2-april26test.lab-emergent360.com/#studentinfo)
+ ![Student View](https://github.com/Emergent360/satautomation/assets/18014714/a68794ef-27a2-4e47-a651-5cb90863cc31)
+
+
+ Select the link noted for "Automation controller"
+![AAP2](https://github.com/Emergent360/satautomation/assets/18014714/f8933677-a55e-4284-958e-411620b0e7b5)
 
 
 
