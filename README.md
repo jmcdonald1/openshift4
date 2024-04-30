@@ -165,39 +165,109 @@ Next, click on Templates and search for CONVERT2RHEL / 01 - Take node snapshot j
 
 <img width="1436" alt="Node Snapshot Output" src="https://github.com/Emergent360/satautomation/assets/18014714/8b7f0ce8-1374-4e7a-a475-ab6f356fd761">
 
-Next up, click on Templates, search for, and run the SERVER / RHEL7 - Register job template by click the rocketship icon or by clicking into the template and selecting Launch. When the survey appears, complete it as follows:
+Next up, click on Templates, search for, and run the SERVER / CentOS7 - Register job template by clicking the rocketship icon or by clicking into the template and selecting Launch. When the survey appears, complete it as follows:
 
-<img width="1438" alt="RHEL 7 Register" src="https://github.com/Emergent360/satautomation/assets/18014714/28e99a80-9c29-4685-a6ac-f44b9e08bb72">
+<img width="1433" alt="CentOS Register" src="https://github.com/Emergent360/satautomation/assets/18014714/7dd787a3-cd77-4a68-87e4-d9819016c7e1">
 
-<img width="1116" alt="Register" src="https://github.com/Emergent360/satautomation/assets/18014714/e19a32bb-9464-42d0-ac3d-636cb3f28939">
+<img width="1120" alt="CentOS Register Survery" src="https://github.com/Emergent360/satautomation/assets/18014714/7584c257-c0f2-4c5e-ab7d-46e97280c17c">
+
+The SERVER / CentOS7 - Register output window will appear, showing you the results of each task executed as part of the playbook. 
+
+<img width="1436" alt="CentOS7 Register Output" src="https://github.com/Emergent360/satautomation/assets/18014714/3794c1c5-9c5b-4754-9d49-a5b61946b2eb">
+
+Next, go back to Templates and run the EC2 / Set instance tags based on the Satellite (Foreman) facts job template by clicking the rocketship icon or clicking into the job template and selecting Launch.
+
+<img width="1432" alt="EC2 instance tags" src="https://github.com/Emergent360/satautomation/assets/18014714/91855439-4681-4db6-8ef9-21f41727e981">
+
+<img width="1434" alt="EC2 set instance tags" src="https://github.com/Emergent360/satautomation/assets/18014714/e3843364-a4c2-4eb1-8f75-a0cf5b620d7c">
+
+Next up, click on Templates, search for EC2 / Set instance tag - Ansible Group template, click the rocketship or click on the template and select Launch 
+
+<img width="1435" alt="EC2 instance tag Ansible Group" src="https://github.com/Emergent360/satautomation/assets/18014714/d774a3ad-d2bd-4e04-b87e-0209a69e3c68">
+
+Note that Ansible is being directed to map nodes to a group name. This will be used later via dynamic inventory building to create Ansible inventory groups. 
+
+<img width="1438" alt="Ansible Inventory Group Tags creation" src="https://github.com/Emergent360/satautomation/assets/18014714/aa04ccf0-8365-4eb0-aa8b-0009f2608385">
+
+## **Exercise Three** ##
+
+Dynamic inventories can be populated via dynamic sources
+
+Before running additional templates, click on the Inventories menu item and select All Development and the Hosts tab. Do the same for CentOS7 and RHEL7 Development inventories. You will notice the Hosts tab on each is empty. Note the Sources tab as well, looking at the Details tab to see the source variables that will be used. 
+
+Let's run a Template to update these inventories. Search and run the CONTROLLER / Update inventories via dynamic sources job template by clicking the rocketship icon or selecting the job template and selecting Launch. 
+
+<img width="1435" alt="Update inventories" src="https://github.com/Emergent360/satautomation/assets/18014714/231270d9-c82a-4418-be25-6e6fc6950000">
+
+Complete the Survey:
+
+<img width="1118" alt="Inventories Survey" src="https://github.com/Emergent360/satautomation/assets/18014714/bcaca8b1-577b-4c8e-b090-f1cbdc71a661">
+
+<img width="1436" alt="Inventories output" src="https://github.com/Emergent360/satautomation/assets/18014714/340be4f2-8247-4b8c-ba8e-13d7ada2e0c4">
+
+Run the same template again, this time to update the CentOS7 instances. You will still need to select the Templates link from the menu, otherwise you will just rerun the template with the same survey if you select the rocketship icon directly from the CONTROLLER / Update inventories via dynamic sources output page you are currently on. 
+
+<img width="1437" alt="Controller for CentOS7 template" src="https://github.com/Emergent360/satautomation/assets/18014714/1b812aab-6702-4da2-8285-6dfd442ad36d">
+
+Complete the survey this time with these variables
+
+<img width="1120" alt="CentOS7 survey variables" src="https://github.com/Emergent360/satautomation/assets/18014714/026c980c-68b9-44dc-9701-e5626d7e37a1">
+
+<img width="1431" alt="CentOS7 inventories output" src="https://github.com/Emergent360/satautomation/assets/18014714/79ae99f9-c119-4310-86e9-b8f79516768b">
 
 
 
 ## **Satellite Tour**
 
-During this portion of today's workshop, we will give you a comprehensive overview of Red Hat Satellite, a powerful management tool for Red Hat Enterprise Linux (RHEL) deployments. We'll delve into its features, explore its functionalities, and discover how it can streamline your infrastructure management.  By the end of this workshop, you'll be equipped to leverage Satellite's capabilities to automate tasks, improve security, and achieve greater efficiency in managing your RHEL environment.
+During this portion of today's workshop, we will give you a comprehensive overview of Red Hat Satellite, a powerful management tool for Red Hat Enterprise Linux (RHEL) deployments. We'll dive into its features, explore its functionalities, and discover how it can streamline your infrastructure management.  By the end of this portion of the workshop, you'll be equipped to leverage Satellite's capabilities to automate tasks, improve security, and achieve greater efficiency in managing your RHEL environment.
+
+Satellite provides many benefits within your IT stack, namely, it serves as...
 
 A centralized management platform for Red Hat Enterprise Linux (RHEL) systems.
+
 Simplifies and automates tasks like provisioning, configuration management, patch management, and subscription management.
+
 Provides a single point of control for managing your entire RHEL infrastructure.
 
 Reduced Costs: Saves time and resources by automating tasks.
+
 Increased Efficiency: Streamlines workflows and simplifies management.
+
 Improved Security: Enhances security posture by automating patch deployment and vulnerability management.
+
 Enhanced Compliance: Simplifies compliance audits with centralized reporting and audit trails.
 
 System Provisioning: Automate the deployment of new RHEL systems with pre-configured settings.
+
 Configuration Management: Apply and enforce consistent configurations across your entire RHEL environment.
+
 Patch Management: Automate the deployment of security patches and software updates to ensure your systems stay up-to-date.
+
 Subscription Management: Manage and track RHEL subscriptions for all your systems from a central location.
+
 Content Delivery: Efficiently distribute content like patches, software updates, and configuration files to your RHEL systems.
+
 Reporting and Auditing: Generate comprehensive reports for compliance audits and track system activity.
 
 Satellite Server: The central management hub that controls and coordinates all Satellite operations.
+
 Capsule Servers (Optional): Optional servers deployed closer to remote systems for faster content delivery and reduced network traffic.
+
 Client Systems: RHEL systems managed by Satellite.
+
 Content Repositories: Repositories containing software packages, patches, and configuration files.
+
 External Systems: External systems like identity management and subscription management services.
+
+We ran several playbooks in Ansible to help configure our Satellite environment. As we are taking our tour today, open your instance of Satellite by clicking the link from your student environment 
+
+![Workbench](https://github.com/Emergent360/satautomation/assets/18014714/400a06cd-b2b7-4b00-abd7-a96d6490ea75)
+
+Once logged into Satellite, click the Hosts button from the side panel menu, then select All Hosts.
+
+<img width="1436" alt="All Hosts" src="https://github.com/Emergent360/satautomation/assets/18014714/bb973cd3-a9d9-4266-b4d8-7534137fba45">
+
+You should see your RHEL 7 and CentOS7 instances appearing in your list of hosts. These nodes are now registered to your instance of Satellite. 
 
 
 
