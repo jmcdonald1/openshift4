@@ -7,12 +7,12 @@ Welcome to today's Satellite Automation Workshop! We are very excited to present
 
 Before we get started, let's log into your student seat:
 
-> Assign yourself a student number using [Student Assignments](https://aap2-april26test.lab-emergent360.com/#studentinfo)
+> Assign yourself a student number using [Student Assignments](https://aap2-smrtmgmt-april.lab-emergent360.com/)
 
 ![student assignment page](https://github.com/Emergent360/satautomation/assets/18014714/cffcfda9-2488-4fe9-b75b-8a935870d960)
 
 
-> For more information on Ansible Best Practices, playbooks, inventory creation, roles, and modules; checkout this deck: [Ansible Best Practices](https://aap2.demoredhat.com/decks/ansible_best_practices.pdf) 
+> For more information on Ansible Best Practices, playbooks, inventory creation, roles, and modules; take a look at this deck: [Ansible Best Practices](https://aap2.demoredhat.com/decks/ansible_best_practices.pdf) 
 
 
 
