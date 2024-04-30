@@ -418,8 +418,11 @@ vi /etc/convert2rhel.ini
 
 11. Reboot the system
 
+```
+   reboot
+```
 
-12. Login again, sudo to root, and verify system has been upgraded to RHEL:
+13. Login again, sudo to root, and verify system has been upgraded to RHEL:
 
 ```
     uname –r
