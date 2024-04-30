@@ -269,6 +269,64 @@ Once logged into Satellite, click the Hosts button from the side panel menu, the
 
 You should see your RHEL 7 and CentOS7 instances appearing in your list of hosts. These nodes are now registered to your instance of Satellite. 
 
+Next, let's verify that all your content is available for your Dev, QA, and Prod environments. To do this, click on Content, then Content Views, then search for RHEL7. 
+
+<img width="1437" alt="Content" src="https://github.com/Emergent360/satautomation/assets/18014714/7c2f9602-ab05-4d8b-8820-468b28c10dbf">
+
+As we continue our tour, we will learn how to configure and perform an OpenSCAP scan using playbooks in Ansible Automation Platform 2 with Satellite. When running multiple Red Hat Enterprise Linux systems, it's important to keep all of these systems compliant with a meaningful security policy and perform security scans often. OpenSCAP is an open source project that is used by government agencies, corporations, as well as e-commerce (just to name a few examples). OpenSCAP provides tools for automated vulnerability checking. Satellite can be loaded with RPM packages for SCAP workbench v1.2.0-8 which will provide scanning capabilities. Satellite is also loaded with the SCAP security guide v0.1.54-3 for RHEL7 and CentOS device which provides the appropriate XCCDF benchmarks for PCI and STIG compliance for the purpose of this exercise. This exercise will focus on RHEL systems, CentOS will be out of scope. 
+
+## **Exercise Four** ##
+
+Now, we will create a new compliance policy. To do this, we will configure a compliance policy that we can use to scan our RHEL nodes. 
+
+In Satellite, hover over Hosts in the panel to the left and click on Policies. 
+
+<img width="1438" alt="Compliance Policies" src="https://github.com/Emergent360/satautomation/assets/18014714/b7bb7bb0-0cb5-4bdd-b9e4-364031a80b24">
+
+Click on New Compliance Policy and complete each of the steps.
+
+<img width="1438" alt="Deployment Options" src="https://github.com/Emergent360/satautomation/assets/18014714/8ed52c93-05cf-4b99-84e9-93e21ec5d3d9">
+
+Leave Manual selected and click on Next. 
+
+<img width="1434" alt="Policy Attributes" src="https://github.com/Emergent360/satautomation/assets/18014714/63000c44-cb78-4b72-af01-7457ea80196b">
+
+Under the Policy Attributes tab, enter PCI_Compliance in both the Name and Description fields. If it gives you an error that the name has already been taken, you can use PCI_Compliance2 
+
+Click on Next. 
+
+Under the SCAP Content tab, select Red Hat rhel7 default content in the SCAP Content drop-down box, followed by PCI-DSS v3.2.1 Control Baseline for Red Hat Enterprise Linux 7 in the XCCDF Profile drop-down box. 
+
+<img width="1437" alt="SCAP Content tab" src="https://github.com/Emergent360/satautomation/assets/18014714/3e1e49da-3cdb-4c52-941e-1b43d2963ce2">
+
+Click on Next. 
+
+Select Weekly and Monday for the Schedule tab. 
+
+<img width="1438" alt="Schedule tab" src="https://github.com/Emergent360/satautomation/assets/18014714/3d314e01-b765-44c9-b02f-fe66c7c60802">
+
+Click on Next. 
+
+Keep the default values for the Locations tab.
+
+<img width="1439" alt="Locations tab" src="https://github.com/Emergent360/satautomation/assets/18014714/d4fcac82-d175-46e0-9eb8-02e84199cdfa">
+
+Click on Next. 
+
+Keep the default values for the Organizations tab.
+
+<img width="1437" alt="Organizations tab" src="https://github.com/Emergent360/satautomation/assets/18014714/7cc3ace0-da86-44a4-bdf8-60a55b4d25da">
+
+Click on Next. 
+
+Keep the default values for the Hostgroups tab. 
+
+<img width="1439" alt="Hostgroups tab" src="https://github.com/Emergent360/satautomation/assets/18014714/b82914ac-90d0-48e2-9d5f-44036fc8e634">
+
+Click Submit. 
+
+
+
 
 
 ## **Convert2RHEL** ##
