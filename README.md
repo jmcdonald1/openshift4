@@ -340,7 +340,10 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
 ``` 
 
 3. Login and sudo to root
-    - sudo su –
+
+```
+   sudo su
+```
 
 4. Update CentOS box and reboot
  
@@ -348,11 +351,19 @@ Next up, let's use Convert2RHEL to upgrade a CentOS 7 node to RHEL. To do this, 
   yum update -y
 ```
 
-   - reboot
+```
+   reboot
+```
 
 6. Login again, sudo to root
 
-   - sudo su –
+```
+   ssh centos@node4
+``` 
+
+```
+   sudo su
+```
 
 7. Download RH GPG key and install convert2rhel repo
 
@@ -378,7 +389,7 @@ vi /etc/convert2rhel.ini
 ```
         
 	# -*- coding: utf-8 -*-
-        # This file should be in mode 0600
+ 	# This file should be in mode 0600
         # Example of configuration file convert2rhel.ini for secrets.
         # Possible locations of this file:
         # 1) user specified and passed by -c, --config-file option; highest priority
