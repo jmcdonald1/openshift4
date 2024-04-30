@@ -136,7 +136,29 @@ You will be taken under the Views, Jobs output window, where you can view the ou
 
 <img width="1425" alt="Controller Play" src="https://github.com/Emergent360/satautomation/assets/18014714/ec278bcb-43f4-4623-aeaa-5811166088f9">
 
+Remember to wait until you see the green "Successful" tag before moving on to the next exercise. 
 
+Then, navigate back to Templates on the left side pane. 
+
+You will notice many more Job Templates have been provisioned in your Controller. We will use some of these in today's workshop. 
+
+<img width="1436" alt="Templates" src="https://github.com/Emergent360/satautomation/assets/18014714/a807edef-6232-44a8-b132-f6966490294f">
+
+Next, let's run SATELLITE / RHEL - Publish Content View job template by clicking the rocketship icon or by pressing the Launch button. When prompted by the survey for the content view to publish, from the drop down menu, select RHEL 7. 
+
+<img width="1432" alt="Publish Content View" src="https://github.com/Emergent360/satautomation/assets/18014714/df91cd75-218b-4b8f-9501-e6ac0aa9b8a6">
+
+<img width="1118" alt="Survey" src="https://github.com/Emergent360/satautomation/assets/18014714/7cdd8bf6-c7ad-4b52-9bdb-6fa190c05ef2">
+
+> Hit Next, then Launch.
+
+You will be taken to the Jobs view, showing the output window for the template SATELLITE / RHEL - Publish Content View. This job will take about a minute to run. 
+
+<img width="1434" alt="Publish Content View" src="https://github.com/Emergent360/satautomation/assets/18014714/35fc21d8-bb3c-455f-a11a-34d722e9f85a">
+
+Next, click on Templates and search for CONVERT2RHEL / 01 - Take node snapshot job template. Click on the rocketship icon or the template, and click Launch. This job template will take longer, about seven minutes to complete. 
+
+<img width="1431" alt="Convert2RHEL Take Snapshot" src="https://github.com/Emergent360/satautomation/assets/18014714/3f8b53bc-9b27-4ad7-a633-c1c723ee4779">
 
 
 ## **Satellite Tour**
