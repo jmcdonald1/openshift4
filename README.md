@@ -1,3 +1,5 @@
+![Emergent Red Hat](https://github.com/Emergent360/satautomation/assets/18014714/929db49d-f0d7-4a4d-8dbe-6acd861fbe48)
+
 # Satellite Automation Workshop
 Welcome to today's Satellite Automation Workshop! We are very excited to present a bit of a tour along with some exercises that will help your teams understand how Ansible Automation Platform integrates with Red Hat Satellite to manage OS patching and content deployment in a predictable, automated way. 
 
