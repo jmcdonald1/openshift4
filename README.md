@@ -106,7 +106,7 @@ Populate dynamic inventories - CentOS7
 ## **Exercise One** ##
  Log into your Ansible Automation Platform (AAP2) Controller
 
- Use the link found [here](https://aap2-april26test.lab-emergent360.com/#studentinfo)
+ Use the link found [here](https://aap2-smrtmgmt-april.lab-emergent360.com/#studentinfo)
  ![Student View](https://github.com/Emergent360/satautomation/assets/18014714/a68794ef-27a2-4e47-a651-5cb90863cc31)
 
 
