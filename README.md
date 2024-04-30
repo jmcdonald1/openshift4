@@ -1,4 +1,5 @@
-![Emergent Red Hat](https://github.com/Emergent360/satautomation/assets/18014714/929db49d-f0d7-4a4d-8dbe-6acd861fbe48)
+![logos](https://github.com/Emergent360/satautomation/assets/18014714/13b3e5b4-0b94-4b0d-b92e-c79b183ffc89)
+
 
 # Satellite Automation Workshop
 Welcome to today's Satellite Automation Workshop! We are very excited to present a bit of a tour along with some exercises that will help your teams understand how Ansible Automation Platform integrates with Red Hat Satellite to manage OS patching and content deployment in a predictable, automated way. 
@@ -161,6 +162,15 @@ You will be taken to the Jobs view, showing the output window for the template S
 Next, click on Templates and search for CONVERT2RHEL / 01 - Take node snapshot job template. Click on the rocketship icon or the template, and click Launch. This job template will take longer, about seven minutes to complete. 
 
 <img width="1431" alt="Convert2RHEL Take Snapshot" src="https://github.com/Emergent360/satautomation/assets/18014714/3f8b53bc-9b27-4ad7-a633-c1c723ee4779">
+
+<img width="1436" alt="Node Snapshot Output" src="https://github.com/Emergent360/satautomation/assets/18014714/8b7f0ce8-1374-4e7a-a475-ab6f356fd761">
+
+Next up, click on Templates, search for, and run the SERVER / RHEL7 - Register job template by click the rocketship icon or by clicking into the template and selecting Launch. When the survey appears, complete it as follows:
+
+<img width="1438" alt="RHEL 7 Register" src="https://github.com/Emergent360/satautomation/assets/18014714/28e99a80-9c29-4685-a6ac-f44b9e08bb72">
+
+<img width="1116" alt="Register" src="https://github.com/Emergent360/satautomation/assets/18014714/e19a32bb-9464-42d0-ac3d-636cb3f28939">
+
 
 
 ## **Satellite Tour**
