@@ -1,8 +1,25 @@
 ![logos](https://github.com/Emergent360/satautomation/assets/18014714/13b3e5b4-0b94-4b0d-b92e-c79b183ffc89)
 
 
-# Satellite Automation Workshop
-Welcome to today's Satellite Automation Workshop! We are very excited to present a bit of a tour along with some exercises that will help your teams understand how Ansible Automation Platform integrates with Red Hat Satellite to manage OS patching and content deployment in a predictable, automated way. 
+# OpenShift 4 101 Workshop
+
+Description
+This workshop will have you deploying and creating native docker images for a Node.js based website and learning to leverage the power of OpenShift 4 to build, deploy, scale, and automate.
+
+Who should attend
+Anyone who has had any exposure to Containers
+- Architects
+- Developers
+- Technical leads
+- Operations Engineers
+- What you will learn
+- S2I
+- Rollback Replication and Recovery
+- Using Labels
+- CI/CD pipeline
+
+Introduction
+Welcome to the workshop! This particular workshop will have you deploying with native docker images as well as using OpenShift to create docker images for a Node.js based website. You will also be leveraging the power of OpenShift to build, deploy, scale, and automate.
 
 
 Before we get started, let's log into your student seat:
