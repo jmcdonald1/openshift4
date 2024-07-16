@@ -55,26 +55,44 @@ Cluster management nodes - The foreman of the OpenShift architecture, the manage
 Cluster worker nodes - Where the compute happens, your software is run on worker nodes
 
 
-## **Welcome to Your Ansible Automation Platform Workshop Tour!**
-Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
+## **Welcome to OpenShift!** ##
+This lab provides a quick tour of the OpenShift console to help you get familiar with the user interface. If you are already familiar with the basics of OpenShift, this will be easy in that we are simply ensuring you can login and create a project.
 
-Here's what you can expect today:
+## **Accessing OpenShift** ##
+OpenShift provides a web console that allows you to perform various tasks via a web browser.
 
-An Introduction to Ansible Automation Platform (AAP).
+## **Let’s Login to the Web Console** ##
+Use your browser to navigate to the URI provided by your instructor and login with the user/password provided.
 
-We'll kick things off with an overview of AAP, its key components, and its numerous benefits for automating infrastructure, applications, and IT workflows.
-Learn how AAP builds upon the foundation of Ansible Tower and introduces features like centralized management, role-based access control, and enhanced security.
+```
+$ oc login https://api.openshift4.lab-emergent360.com:6443 --insecure-skip-tls-verify=true
+```
+<img width="1424" alt="ocp-login" src="https://github.com/user-attachments/assets/84b7f94f-e369-4a58-8c34-f645257ce8ad">
 
-A chart of today's workshop environment looks like this:
+Login Webpage
 
-![ansible_smart_mgmt_diagram](https://github.com/Emergent360/satautomation/assets/18014714/51aea489-b1f3-4d17-9696-3bc6802a18e2)
+Once logged in you should see your available projects - or you will be provided with an informational box that “No projects exist”
 
-## **Environment** ##
+![ocp-dev-view](https://github.com/user-attachments/assets/322427a0-3f54-4352-87d6-091e669d78b6)
 
-![Environment](https://github.com/Emergent360/satautomation/assets/18014714/5f2170d8-4a2f-4a63-b08e-8d1db6f1dde8)
+Developer Default View
+
+## **So this is what an empty project looks like** ##
+First let’s create a new project to do our workshop work in. We will use the student number you were given to ensure you don’t clash with classmates:
+
+Click on the “Project: all projects” button and select “Create Project” from the drop down menu
+
+![ocp-dev-create-project-terminal](https://github.com/user-attachments/assets/63634786-d9ca-4fc2-897c-74335a4fab10)
 
 
-Then, we will dive into the AAP User Interface:
+Populate “Name” with “terminal-0 ” and populate “Description” boxes with whatever you like. And click “Create”
+
+This is going to take you to the next logical step of adding something to the project, but we don’t want to do that just yet.
+
+## **Let’s launch a terminal.
+Click “+Add”, to add a new item to the project
+
+
 
 Get comfortable navigating the intuitive AAP user interface. We'll explore dashboards, inventories, projects, and credentials – the building blocks for your automation adventures.
 Learn how to manage your infrastructure within AAP, including adding machines, groups, and cloud resources.
