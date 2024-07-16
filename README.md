@@ -41,17 +41,29 @@ This workshop currently focuses on 4 main customer pain points:
 We will be using the following terms throughout the workshop labs; so, here are some basic definitions you should be familiar with. You’ll learn more terms along the way; but, these are the basics to get you started.
 
 Container - Your software wrapped in a complete filesystem containing everything it needs to run
+
 Image - We are talking about docker images; read-only and used to create containers
+
 Image Stream - An image stream comprises one or more OCI images identified by tags.
+
 Pod - One or more docker containers that run together
+
 Service - Provides a common DNS name to access a pod (or replicated set of pods)
+
 Project - A project is a group of services that are related logically
+
 Deployment - an update to your application triggered by a image change or config change
+
 Build - The process of turning your source code into a runnable image
+
 BuildConfig - configuration data that determines how to manage your build
+
 Route - a labeled and DNS mapped network path to a service from outside OpenShift
+
 Operator - A method of packaging, deploying and managing a Kubernetes application
+
 Cluster management nodes - The foreman of the OpenShift architecture, the management node schedules operations, watches for problems, and orchestrates everything
+
 Cluster worker nodes - Where the compute happens, your software is run on worker nodes
 
 
@@ -89,26 +101,73 @@ Populate “Name” with “terminal-0 ” and populate “Description” boxes 
 
 This is going to take you to the next logical step of adding something to the project, but we don’t want to do that just yet.
 
-## **Let’s launch a terminal.
+## **Let’s launch a terminal.** ##
 Click “+Add”, to add a new item to the project
 
+![ocp-addToProjectButton](https://github.com/user-attachments/assets/cea59219-060d-43ba-8f21-d9279adb157c)
+
+Click “Container Image”, to add an existing image from the container registry
+
+![ocp-ContainerImageButton](https://github.com/user-attachments/assets/a9396304-0fa5-4144-bf5d-e84ba457a9a9)
+
+In the dialog box under the default radio button, “Image name from external registry”, enter “quay.io/openshifthomeroom/workshop-terminal”, the image should be “Validated” when found.
+
+![ocp-deploy-image](https://github.com/user-attachments/assets/070d516d-8353-4292-beb0-e5c939d6408a)
+
+Observe default values that are populated in the search results
+
+![ocp-butterfly-create-1](https://github.com/user-attachments/assets/47c14876-47af-498f-9344-a60c27267528)
+
+Click “Create”
+
+You will now see a screen that shows a thumbnail view of your deployed application. Click on it, to expand the screen, and see details of the running pod:
+
+![ocp-workshop-terminal-thumb](https://github.com/user-attachments/assets/34ed00a2-a41c-460b-9ac2-006658c0b40e)
+
+“Topology”
+
+![ocp-butterfly-topology](https://github.com/user-attachments/assets/ebe50499-e1d8-4a5f-9188-7d8e57efaee5)
+
+Test out the Butterfly terminal
+
+Notice that in the web console overview, you now have a URL in the service box. You can see the webapp running by clicking the route you just exposed.
+
+![ocp-butterfly-route](https://github.com/user-attachments/assets/762de08d-9d53-4fd1-b4e6-1187266518fe)
+
+Check to see what projects you have access to:
+ Use your existing Butterfly terminal, and login, using the same URI with following command:
+
+```
+ $ oc login https://api.openshift4.lab-emergent360.com:6443 --insecure-skip-tls-verify=true
+```
+
+The preceding command should output:
+
+```
+Authentication required for https://api.openshift4.lab-emergent360.com:6443 (openshift)
+ Username: user1
+ Password:
+Login successful.
+```
+
+```
+$ oc get projects
+oc get projects
+NAME          DISPLAY NAME   STATUS
+terminal-1                  Active
+```
+
+ Type the following command to show services, deployment configs, build configurations, and active deployments (this will come in handy later):
+
+```
+$ oc status
+```
+
+Summary
+You should now be ready to get hands-on with our workshop labs.
 
 
-Get comfortable navigating the intuitive AAP user interface. We'll explore dashboards, inventories, projects, and credentials – the building blocks for your automation adventures.
-Learn how to manage your infrastructure within AAP, including adding machines, groups, and cloud resources.
 
-Next up, we will build our First Playbook:
-
-Now comes the fun part! We'll delve into the world of Ansible playbooks, the heart of automation. You'll learn how to write playbooks using YAML syntax to automate tasks.
-We'll walk you through the structure of a playbook, covering modules, tasks, variables, and conditionals.
-
-Get hands-on experience by building your first basic playbook to automate a simple task on your managed machines.
-
-After building our first playbook, we will use some more advanced Playbook techniques:
-
-Don't stop there! We'll explore advanced playbook features like loops, conditionals, error handling, and templating. These powerful tools will enable you to create sophisticated automations that adapt to various conditions.
-
-Learn how to manage complex workflows by breaking them down into smaller, reusable playbooks.
 
 We will of course take a look at Inventory management as well:
 
