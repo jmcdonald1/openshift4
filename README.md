@@ -3,10 +3,10 @@
 
 # OpenShift 4 101 Workshop
 
-Description
+## **Description** ##
 This workshop will have you deploying and creating native docker images for a Node.js based website and learning to leverage the power of OpenShift 4 to build, deploy, scale, and automate.
 
-Who should attend
+## **Who should attend** ##
 Anyone who has had any exposure to Containers
 - Architects
 - Developers
@@ -18,19 +18,14 @@ Anyone who has had any exposure to Containers
 - Using Labels
 - CI/CD pipeline
 
-Introduction
+## **Introduction** ##
 Welcome to the workshop! This particular workshop will have you deploying with native docker images as well as using OpenShift to create docker images for a Node.js based website. You will also be leveraging the power of OpenShift to build, deploy, scale, and automate.
 
 
-Before we get started, let's log into your student seat:
+## **Create a Github account** ##
+If you don’t have a person GitHub account please sign up [here](https://github.com/join?source=header-home) to create a free account.
 
-> Assign yourself a student number using [Student Assignments](https://aap2-smrtmgmt-april.lab-emergent360.com/)
-
-![student assignment page](https://github.com/Emergent360/satautomation/assets/18014714/cffcfda9-2488-4fe9-b75b-8a935870d960)
-
-
-> For more information on Ansible Best Practices, playbooks, inventory creation, roles, and modules; take a look at this deck: [Ansible Best Practices](https://aap2.demoredhat.com/decks/ansible_best_practices.pdf) 
-
+Create [GitHub Account](https://github.com/join?source=header-home)
 
 
 ## **Use Cases** ##
@@ -41,17 +36,24 @@ This workshop currently focuses on 4 main customer pain points:
 - CentOS to RHEL conversion
 - Vulnerability Management with Insights
 
-## **Presentation** ##
-The exercises are self-explanatory and are meant to guide participants through the entire lab. All concepts are explained as they are introduced. 
+## **Key Terms** ##
 
-Today's presentation is available to support the workshop and explain Automation, the basics of Ansible and the topics of the exercises in more detail. Today's Workshop presentation can be downloaded [here](https://uploads-ssl.webflow.com/64dd02f7406bf2448a30e68f/662fdbc786abd010d11d18b8_Satellite%20Automation.pdf)
+We will be using the following terms throughout the workshop labs; so, here are some basic definitions you should be familiar with. You’ll learn more terms along the way; but, these are the basics to get you started.
 
-## **Time Planning and CPE Credits** ##
-The time required to do the workshops strongly depends on multiple factors: the number of participants, how familiar those are with Linux in general and how much discussions are done in between.
+Container - Your software wrapped in a complete filesystem containing everything it needs to run
+Image - We are talking about docker images; read-only and used to create containers
+Image Stream - An image stream comprises one or more OCI images identified by tags.
+Pod - One or more docker containers that run together
+Service - Provides a common DNS name to access a pod (or replicated set of pods)
+Project - A project is a group of services that are related logically
+Deployment - an update to your application triggered by a image change or config change
+Build - The process of turning your source code into a runnable image
+BuildConfig - configuration data that determines how to manage your build
+Route - a labeled and DNS mapped network path to a service from outside OpenShift
+Operator - A method of packaging, deploying and managing a Kubernetes application
+Cluster management nodes - The foreman of the OpenShift architecture, the management node schedules operations, watches for problems, and orchestrates everything
+Cluster worker nodes - Where the compute happens, your software is run on worker nodes
 
-Having said that, the presentation should take about 40 minutes, with a 10-minute break, then the exercises themselves should take roughly 3 hours. We will break every 40 minutes or so to complete three polling questions, allowing the group to qualify for CPEs. This workshop is accredited by NASBA, which requires one CPE credit to be awarded for every 50 minutes of teaching. The polling questions ensure participants are present and working on presented content. You will be awarded credits as long as you respond to the polling questions. 
-
-Certificates with the awarded amount of CPEs should be sent out to the attendees within 5 business days, post-event. 
 
 ## **Welcome to Your Ansible Automation Platform Workshop Tour!**
 Get ready to unlock the power of automation! This workshop will guide you through the exciting world of Ansible Automation Platform (AAP), equipping you to automate IT tasks and streamline your processes.
